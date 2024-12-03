@@ -32,7 +32,7 @@
     
     line-height: 1.6;
     color: #ff8b48;
-    padding-top: 40px; /* Add padding equal to the navbar height */
+    padding-top: 60px; /* Add padding equal to the navbar height */
   }
   /* Header */
   .header {
@@ -243,6 +243,7 @@
     align-items: center;
     background-color: #ff8b48;
     padding: 10px 40px;
+    height: 60px;
     color: #fff;
     position: fixed; /* Make it fixed at the top */
     top: 0;          /* Align to the top */
@@ -308,7 +309,8 @@
     position: absolute; 
     left: 50%;
     transform: translateX(-50%); 
-    height: 40px; 
+    height: 50px; 
+    border-radius: 8px;
 }
   
   .nav-links {
@@ -597,4 +599,43 @@ a:hover {
 
 .contact-form button:hover {
   background: #45A049;
+}
+.landing-section {
+  background-color: #ffc6c6;
+  padding: 60px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.landing-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.landing-section h2 {
+  font-size: 2.5rem;
+  color: #ff988b;
+  margin-bottom: 20px;
+}
+
+.landing-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #f58e49;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9c4003;
 }
