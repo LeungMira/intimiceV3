@@ -114,6 +114,56 @@
     gap: 1rem;
     margin-top: 1rem;
   }
+  .services {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fcfcfc;
+  }
+  
+  .services h2 {
+    color: #fa994a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card {
+    flex: 0 0 25%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    opacity: 0.5;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card.active {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+  
+  .card:not(.active) {
+    opacity: 0.5;
+  }
   
   .card {
     background: #fff;
@@ -123,8 +173,27 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
     max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
-  
+  .cardTEA {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+    height: 60%; /* Adjust to control the image's proportion in the card */
+    object-fit: cover; /* Ensures the image scales down and fills the space without distorting */
+  }
   .card h3 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -137,10 +206,25 @@
   
   /* About Section */
   .about {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     padding: 2rem;
     background: #ffffff;
     color: #fa994a;
     text-align: center;
+  }
+  .about-It
+  {
+    grid-column: -2 / -1;
+
+  }
+  .about img 
+  {
+    height: 450px;
+    width: 250px;
+    object-fit: cover;
   }
   
   .about h2 {
@@ -288,6 +372,7 @@
     margin-bottom: 1rem;
   }
   .blog-container {
+    
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
@@ -444,7 +529,7 @@ a:hover {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
+  background: #fcd1aa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
